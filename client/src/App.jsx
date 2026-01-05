@@ -14,7 +14,8 @@ function App() {
   const [editingId, setEditingId] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const API_URL = '/api/books';
+  const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/books`;
+
 
   // Fetch Books
   const fetchBooks = async () => {
